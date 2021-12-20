@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contentt="IE=edge">
+    <meta name="viewport" contentt="width=device-width, initial-scale=1.0">
+    <title>Felices Fiestas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo"><i class="fas fa-gifts"></i>gifts</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">Sobre nostros</a>
+            <a href="#shop">Tienda</a>
+            <a href="#galery">galeria</a>
+            <a href="#message">Mensaje</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="" class="fas fa-shopping-cart"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="BUSCAR AQUI!!">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- SECTION MENU  -->
+    <section class="home" id="home">
+        <div class="slide active" style="background:url(images/home-bg-1.png) no-repeat;
+        background-size:cover; background-position:center;">
+            <div class="content">
+                <span>felices fiestas</span>
+                <h3>hasta el 60%</h3>
+                <a href="#" class="btn">comprar ahora</a>
+            </div>
+        </div>
+        <div class="slide" style="background:url(images/home-bg-2.png) no-repeat;
+            background-size:cover; background-position: center;">
+            <div class="content">
+                <span>ho-ho-ho</span>
+                <h3>feliz navidad</h3>
+                <a href="#" class="btn">comprar ahora</a>
+            </div>
+        </div>
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    </section>
+    <!-- SECTION CATEGORY  -->
+    <section class="category">
+        <div class="box-container">
+            <a class="box">
+                <img src="images/category-1.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+            <a class="box">
+                <img src="images/category-2.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+            <a class="box">
+                <img src="images/category-3.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+            <a class="box">
+                <img src="images/category-4.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+            <a class="box">
+                <img src="images/category-5.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+            <a class="box">
+                <img src="images/category-6.png" alt="">
+                <h3>decoracion para navidad</h3>
+            </a>
+        </div>
+        
+    </section>
+    <!-- SECTION ABOUT -->
+    <section class="about">
+        <div class="image">
+            <img src="images/about-img.png" alt="">
+        </div>
+        <div class="content">
+            <div class="box">
+                <h3>rebajas de navidad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                <a href="#" class="btn">leer mas </a>
+            </div>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-tree"></i>
+                    <p>Arbol de navidad</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-gift"></i>
+                    <p>Regalos para navidad</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-cookie"></i>
+                    <p>Galletas navidenas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION SHOP -->
+    <section class="shop" id="shop">
+
+        <h1 class="heading">Nuestra tienda</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>   
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur
+                        debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nombre del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, commodi. At fugiat odio error consequuntur
+                        debitis dolores eius ipsam iste accusantium delectus et id, sunt commodi magnam hic quam quia.</p>
+                    <a href="#" class="btn">comprar ahora</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECTION BANNER -->
+    <section class="banner">
+        <div class="content">
+            <span>ofertas especiales</span>
+            <h3>hasta el 30% de descuento</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod ipsum officia, tenetur optio natus enim dolore nihil adipisci deserunt officiis maiores rerum sunt, est nobis sequi consequuntur voluptates odio?</p>
+            <a href="#" class="btn">ver ofertas</a>
+        </div>
+    </section>
+    <!-- SECTION GALLERY -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">Nuestra galeria</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/gallery-img-1.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallery-img-2.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallery-img-3.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallery-img-4.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallery-img-5.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallery-img-6.jpg" alt="">
+                <div class="content">
+                    <h3>feliz navidad </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>  
+        </div>
+
+    </section>
+    <!-- SECTION MESSAGE -->
+    <section class="message" id="message">
+        <form action="">
+            <h3>Contactanos</h3>
+            <input type="text" placeholder="nombre completo " class="box">
+            <input type="email" placeholder="correo electronico" class="box">
+            <input type="number" name="" id="" placeholder="telefono" class="box">
+            <textarea name="" id="" cols="30" rows="10" placeholder="mensaje" class="box"></textarea>
+            <input type="submit" value="enviar" class="btn">
+        </form>
+    </section>
+    <!-- SECTION  BLOGS-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Nuestro blogs diario</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="">
+
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>enero</span>
+                    </div>
+                    <a href="" class="user"><i class="fas fa-user"></i>por Edgar Sanchez</a>
+                    <a href="#" class="title">el titulo va aqui</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="">
+
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>enero</span>
+                    </div>
+                    <a href="" class="user"><i class="fas fa-user"></i>por Edgar Sanchez</a>
+                    <a href="#" class="title">el titulo va aqui</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+            
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>enero</span>
+                    </div>
+                    <a href="" class="user"><i class="fas fa-user"></i>por Edgar Sanchez</a>
+                    <a href="#" class="title">el titulo va aqui</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem
+                        culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam
+                        corporis dolorum.</p>
+                    <a href="#" class="btn">ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION SERVICES -->
+    <section class="service">
+        <div class="box">
+            <img src="images/icon-1.png" alt="">
+            <h3>envio gratis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+        </div>
+        <div class="box">
+            <img src="images/icon-2.png" alt="">
+            <h3>pago segurp</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+        </div>
+        <div class="box">
+            <img src="images/icon-3.png" alt="">
+            <h3>soporte 24/7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut voluptatibus beatae, aliquid exercitationem culpa nam earum nulla reiciendis consequatur nobis non quaerat mollitia dignissimos ducimus impedit numquam corporis dolorum.</p>
+        </div>
+     </section>
+     <!-- SECTION FOOTER -->
+    <section class="footer">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="#about"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+                <a class="link" href="#message"> <i class="fas fa-angle-right"></i> message</a>
+                <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +52 044 664 4097182 </a>
+                <a class="link" href="#"> <i class="fas fa-phone"></i> +52 044 664 4097182 </a>
+                <a class="link" href="#"> <i class="fas fa-envelope"></i> edgarsanchez9112@gmail.com </a>
+                <a class="link" href="#"> <i class="fas fa-map"></i> Tijuana Baja california - 22246 </a>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span>edgar sanchez alvarez</span> | all rights reserved! </div>
+    
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
